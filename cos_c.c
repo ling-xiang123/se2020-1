@@ -22,17 +22,17 @@ double fcos(double x)
         t=(pow(x,2*i))/fac(2*i);
         temp+=pow(-1,i)*t;
         i++;
-        //printf("%.5lf\n",temp);
+      
     }
     return temp;
 }
 int main()
 {
-    double r,temp;
+    double r;
     printf("请输入弧度值，180°对应3.1415926弧度，以此类推...\n");
     printf("弧度(rad):");
     scanf("%lf",&r);
-    temp=fcos(r);
-    printf("%.5lf\n",temp);
+   
+    printf("%.5lf\n",fcos(r));
     printf("%.51f\n",cos(r));//用系统函数进行对比
 }
